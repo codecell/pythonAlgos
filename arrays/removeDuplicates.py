@@ -21,4 +21,7 @@ def removeDuplicates(nums):
 
     return len(nums)
 
-print(removeDuplicates([0, 0, 1, 2, 2, 3, 3, 3, 4]))
+# print(removeDuplicates([0, 0, 1, 2, 2, 3, 3, 3, 4]))
+
+arr = [3, 5, 5]
+print(arr.index(max(arr)), '<< >>')
