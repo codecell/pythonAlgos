@@ -10,7 +10,7 @@ from collections import defaultdict
 
 def twoSum(nums, target):
 
-    d = defaultdict(int)
+    d = {}
 
     # hash the values of nums to their index as keys of the hash table 
     # in the same lookup check the table again to see if an already hashed index complements the current 
@@ -19,12 +19,12 @@ def twoSum(nums, target):
     # is constant
 
     for indez in range(0, len(nums)):
-        d[indez] = nums[indez]
         complement = target - nums[indez]
 
-        for key in d:
-            if d[key] == complement and key != indez:
-                return [indez, key]
+        if complement in d:
+            return [indez, d[complement]]
+        else:
+            d[nums[indez]] = indez
 
     ''' solution 2
     currentIndez = 0
