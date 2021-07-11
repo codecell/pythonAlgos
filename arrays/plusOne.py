@@ -1,5 +1,10 @@
 # Q. https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/559/
 
+'''
+    time complexity --- O(n)
+    space -- O(m)
+'''
+
 def plusone(digits):
     res = []
 
