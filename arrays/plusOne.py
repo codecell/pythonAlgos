@@ -21,3 +21,4 @@ def plusone(digits):
 
 print(plusone([9])) #[1, 0]
 print(plusone([1, 2, 3])) #[1, 2, 3]
+print(plusone([39399])) #[3, 9, 4, 0, 0]
