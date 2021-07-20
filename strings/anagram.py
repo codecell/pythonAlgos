@@ -21,4 +21,4 @@ def isAnagram(s, t):
     # return sorted(s) == sorted(t)
 
 print(isAnagram('anagram', 'nagaram')) #true
-print(isAnagram('car', 'cat')) #true
+print(isAnagram('car', 'cat')) #false
