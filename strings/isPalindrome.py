@@ -7,7 +7,8 @@
 import re
 
 def isPalindrome(s):
-    chars = ''.join(re.findall("[\w\d]", s.lower()))
+    # chars = ''.join(re.findall("[\w\d]", s.lower()))
+    chars = [char.lower() for char in s if char.isalnum() ]
 
     i = 0
     j = len(chars) - 1
