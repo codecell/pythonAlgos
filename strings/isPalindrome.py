@@ -14,7 +14,7 @@ def isPalindrome(s):
     j = len(chars) - 1
 
     while i <= j:
-        if chars[i] != chars[j] and chars[j] != '_' and chars[i] != '_':
+        if chars[i] != chars[j]:
             return False
         i += 1
         j -= 1
