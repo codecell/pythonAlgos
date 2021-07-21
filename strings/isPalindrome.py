@@ -1,14 +1,14 @@
 # Q. https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/883/
 
 '''
-    space complexity here is O(1)
+    space complexity here is O(n)
     time is O(n)
 '''
 import re
 
 def isPalindrome(s):
     # chars = ''.join(re.findall("[\w\d]", s.lower()))
-    chars = [char.lower() for char in s if char.isalnum() ]
+    chars = [char.lower() for char in s if char.isalnum()]
 
     i = 0
     j = len(chars) - 1
