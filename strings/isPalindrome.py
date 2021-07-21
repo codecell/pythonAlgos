@@ -2,14 +2,18 @@
 import re
 
 def isPalindrome(s):
-    chars = ''.join(re.findall("[a-zA-z\d]", s.lower()))
+    chars = ''.join(re.findall("[\w\d]", s.lower()))
 
-    reversedStr = ''
+    i = 0
+    j = len(chars) - 1
 
-    for ch in chars:
-        reversedStr = ch + reversedStr
+    while i <= j:
+        if chars[i] != chars[j] and chars[j] != '_' and chars[i] != '_':
+            return False
+        i += 1
+        j -= 1
 
-    return reversedStr == chars
+    return True
 
 
 print(isPalindrome("A man, a plan, a canal: Panama")) # True
