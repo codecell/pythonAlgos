@@ -11,12 +11,12 @@ def strStr(haystack, needle):
     if needle == '':
         return 0
 
-    macthSpan = re.search(needle, haystack)
+    macthObj = re.search(needle, haystack)
 
-    if macthSpan == None:
+    if macthObj == None:
         return -1
 
-    return macthSpan.span()[0]
+    return macthObj.span()[0]
 
 
 print(strStr("hello", 'll')) # 2
