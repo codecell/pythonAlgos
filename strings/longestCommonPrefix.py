@@ -15,6 +15,8 @@ def longestCommonPrefix(strs):
 
     return smallest
 
-print(longestCommonPrefix(['flower', 'flight', 'flow'])) # 'fl'
-print(longestCommonPrefix(['glower', 'flight', 'flow'])) # ''
-print(longestCommonPrefix(['lone', 'loner', 'lonely'])) # 'lone'
+# print(longestCommonPrefix(['flower', 'flight', 'flow'])) # 'fl'
+# print(longestCommonPrefix(['glower', 'flight', 'flow'])) # ''
+# print(longestCommonPrefix(['lone', 'loner', 'lonely'])) # 'lone'
+
+print(-2 > -8)
