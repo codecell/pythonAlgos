@@ -1,4 +1,8 @@
 # Q.) https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/603/
+'''
+    space complexity - O(1)
+    Time complexity - O(n)
+'''
 
 def removeNthFromEnd(head, n: int):
     holderList = head
