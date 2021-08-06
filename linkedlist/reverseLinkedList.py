@@ -5,11 +5,11 @@
     Space complexity - O(1)
 '''
 
-def reverseList(head: ListNode):
+def reverseList(head):
     prev = None
     current = head
     
-    while(current is not None):
+    while current is not None:
         nextNode = current.next
         current.next = prev
         prev = current
