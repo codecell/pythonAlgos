@@ -14,10 +14,10 @@ def reverseList(head):
         current.next = prev
         prev = current
         current = nextNode
-        head = prev
+        # head = prev
         
     # print(head)
-    return head
+    return prev
 
 print(reverseList([1, 2, 3, 4, 5])) # [5, 4, 3, 2, 1]
 print(reverseList([9, 8])) # [8, 9]
