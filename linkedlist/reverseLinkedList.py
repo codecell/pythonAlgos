@@ -14,9 +14,7 @@ def reverseList(head):
         current.next = prev
         prev = current
         current = nextNode
-        # head = prev
-        
-    # print(head)
+    
     return prev
 
 print(reverseList([1, 2, 3, 4, 5])) # [5, 4, 3, 2, 1]
