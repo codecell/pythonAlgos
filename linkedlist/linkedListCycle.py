@@ -1,5 +1,9 @@
 # Q. https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/773/
 
+'''
+    Runtime - O(n)
+    Space Complexity - O(1)
+'''
 def hasCycle(head):
     if head == None or head.next == None:
         # means there was a termination
