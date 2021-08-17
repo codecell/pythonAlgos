@@ -1,7 +1,7 @@
 # Q. https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/628
 '''
   time - O(n)
-  space - O(1)
+  space - O(n)
 '''
 def levelOrder(root):
   h = defaultdict(int)
