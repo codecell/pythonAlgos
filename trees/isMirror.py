@@ -1,22 +1,23 @@
 # Q. https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/627/
 
 '''
-    time comlexity - O(n2)
+    time comlexity - O(n^2)
     space - O(1)
 '''
 
 def isSymmetric(root):
-    def inorderTrav(node, order):
-        arr = []
 
-        if node and order == 'left':
-            arr += inorderTrav(node.left, 'left') + [node.val] + inorderTrav(node.right,'left')
-        elif node and order == 'right':
-            arr += inorderTrav(node.right, 'right') + [node.val] + inorderTrav(node.left, 'right')
+    def trav(left, right):
+        if left is None and right is None:
+            return True
+        if left is None or right is None or left.val != right.val:
+            return False
 
-        return  arr
+        if not trav(left.left, right.right):
+            return False
+        if not trav(left.right, right.left):
+            return False
+        
+        return True
 
-    res1 = inorderTrav(root, 'left')
-    res2 = inorderTrav(root, 'right')
-
-    return res1 == res2
+    return isSymmetric(root.left, root.right)
